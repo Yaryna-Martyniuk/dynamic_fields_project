@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic fields sample</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <h1>Add fields as much as you need</h1>
+    <div class="container">
+      <form action="" method="POST">
+        <div id="formfield">
+          <input
+            type="text"
+            class="text"
+            name="text"
+            size="50"
+            placeholder="Your name"
+            required
+          />
+          <input
+            type="email"
+            class="text"
+            name="text"
+            size="50"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="text"
+            class="text"
+            name="text"
+            size="50"
+            placeholder="Optional field"
+          />
+        </div>
+        <input name="submit" type="Submit" value="Submit" />
+      </form>
+      <div class="controls">
+        <button class="add" onclick="add()">
+          <i class="fa fa-plus"></i>
+          Add
+        </button>
+        <button class="remove" onclick="remove()">
+          <i class="fa fa-minus"></i>
+          Remove
+        </button>
+      </div>
+    </div>
+    <script src="formfield.js"></script>
+  </body>
+</html>
