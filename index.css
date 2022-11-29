@@ -8,6 +8,7 @@
   --box-shadow: #6c69691a;
   --border-color: #182835;
   --input-text: #0b1a3e;
+  --input-bg:#fcfeffd6;
   --btn-bg: #475d84;
   --btn-text: #e9f4fb;
 }
@@ -38,7 +39,7 @@ input[type="email"] {
   display: block;
   border-radius: 5px;
   border: 1px solid var(--border-color);
-  background: none;
+  background: var(--input-bg);
   width: 274px;
   color: var(--input-text);
 }
